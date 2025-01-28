@@ -15,43 +15,69 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <nav class="sidebar__navigation">
-            <div class="logo">
-                <a href="">
-                    <img src="assets/icons/logo-spotify.png" alt="Logo Spotify">                 
-                </a>
-            </div>
-            <ul>
-                <li>
+    <header></header>
+    <main>
+        <aside class="sidebar">
+            <nav class="sidebar__navigation">
+                <div class="logo">
                     <a href="">
-                        <span class="fa fa-home"></span>
-                        <span>Início</span>
+                        <img src="assets/icons/logo-spotify.png" alt="Logo Spotify">                 
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="fa fa-search"></span>
-                        <span>Buscar</span>
-                    </a>
-                </li>
-            </ul>
-            </nav>
-            <div class="library">
+                </div>
                 <ul>
                     <li>
                         <a href="">
-                            <span class="fa-solid fa-book-open"></span>
-                            <span>Sua Biblioteca</span>
-                        </a>
-                        <a href="">
-                            <span class="fa-solid fa-plus"></span> 
+                            <div><span class="fa-solid fa-home"></span>
+                            <span>Início</span></div>
                         </a>
                     </li>
-            </ul>
+                    <li>
+                        <a href="">
+                            <div><span class="fa-solid fa-search"></span>
+                            <span>Buscar</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="library">
+                <div class="library__head">
+                    <button class="library__head__button">
+                        <span class="fa-solid fa-book"></span>
+                        <span>Sua Biblioteca</span>
+                    </button>
+                    <span class="fa-solid fa-plus"></span> 
+                </div>
+                <section class="playlist">
+                    <span class="text title">Crie sua primeira playlist.</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar!</span>
+                    <button class="playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </section>
+                <div class="cookies">
+                    <a href="">Política de cookies</a>
+                </div>
+                <div class="languages">
+                    <button class="languages__button">
+                        <div>
+                        <span class="fa-solid fa-globe"></span>
+                        <span>Português do Brasil</span>
+                        </div>
+                    </button>
+                </div>
             </div>
-        </nav>
-    </div>  
+        </aside> 
+    </main>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__content__text">
+                <span>TESTAR O PREMIUM DE GRAÇA</span>
+                <span>Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
+            </div>
+            <div class="footer__content__button">
+                <span>Inscreva-se agora</span>
+            </div>
+        </div>
+    </footer> 
 </body>
-
 </html>
