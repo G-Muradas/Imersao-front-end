@@ -1,9 +1,9 @@
 :root {
     --color-destaque: #1ED760;
-    --color-primary: #191414;
+    --color-primary: #121212;
     --color-secondary: #EEE;
     --color-tertiary: #393E46;
-    --font-nav: 'DM Sans', sans-serif;
+    --font-nav: 'Arial', sans-serif;
     --font-size-nav: 1rem;
 
 }
@@ -22,7 +22,8 @@ body{
 }
 
 .logo,
-.sidebar__navigation{
+.sidebar__navigation,
+.library {
     background-color: var(--color-tertiary);
     border-radius:8px;
     padding: 16px 0 0 16px;
@@ -32,7 +33,7 @@ body{
     display: flex;
 }
 
-.sidebar__navigation .logo img{
+.logo img{
     width: 80px;
 }
 
@@ -41,11 +42,13 @@ body{
     padding: 0 20px 10px 20px;
 }
 
-.sidebar ul li{
+.sidebar ul li,
+.library ul li{
     padding: 10px 0;
 }
 
-.sidebar nav ul li a{
+.sidebar nav ul li a,
+.library ul li a{
     color: var(--color-secondary);
     text-decoration: none;
     font-weight: 600;
@@ -53,7 +56,21 @@ body{
     font-family: var(--font-nav);
 }
 
-#library {
+.sidebar nav ul li a:hover,
+.library ul li a:hover {
+    color: var(--color-destaque);
+}
+
+.library {
+    display: block;
+    margin-top: 10px;
+}
+
+.library ul {
+    padding: 0 20px 10px 20px;
+}
+
+.library ul li{
     display: flex;
     align-content: space-between;
     gap: 50%;
