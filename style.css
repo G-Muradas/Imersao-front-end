@@ -213,12 +213,12 @@ background: linear-gradient(90deg, rgba(255,47,160,1) 4%, rgba(63,94,251,1) 74%)
 
 }
 
-.footer__content__button span {
+.footer__content__button button {
     color: var(--color-primary);
     padding: 10px 20px; 
     border-radius: 2rem;
     background-color: var(--color-secondary);
-
+    width: max-content;
 }
 
 
