@@ -2,11 +2,12 @@
 
 
 .header-container {
+    display: flex;
     height: max-content;
+    margin: 1% 1% 0 32vw;
 }
 
 .header__navigation {
-    margin: 1% 1% 0 32vw;
     max-width: max-content;
     display: flex;
     justify-content: space-around;
@@ -93,7 +94,7 @@
 
 .header__login .subscribe {
     width: max-content;
-    color: var(--text-color-subscribe);
+    color: var(--color-light);
     font-size: var(--font-size-text);
     font-weight: 700;
 }
