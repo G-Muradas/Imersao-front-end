@@ -1,0 +1,118 @@
+/* HEADER */
+
+
+.header-container {
+    height: max-content;
+}
+
+.header__navigation {
+    margin: 1% 1% 0 32vw;
+    max-width: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-radius: var(--radius-content);
+    background-color: var(--color-tertiary);
+}
+
+.header__navigation .navigation__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.arrow-left {
+    margin-right: 1.125rem;
+}
+
+.arrow-left,
+.arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-tertiary);background-color: var(--color-primary),7%;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    width: 47.58vw;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    background-color: var(--color-bg-search);
+    border-radius: 31.25rem;
+    border: 0.125rem solid transparent;
+}
+
+.header__search img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+}
+
+.header__search input {
+    background: transparent;
+    border: none;
+    padding: 0 1rem;
+    color: var(--color-secondary);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    font-size: var(--font-size-text)
+}
+
+.header__search:hover {
+    border: 0.125rem solid var(--color-secondary);
+}
+.header__search img:hover {
+    border: none;
+}
+
+.header__login {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.header__login button {
+    background-color: transparent;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    font-size: var(--font-size-text);
+}
+
+.header__login .subscribe {
+    width: max-content;
+    color: var(--text-color-subscribe);
+    font-size: var(--font-size-text);
+    font-weight: 700;
+}
+
+.subscribe:hover {
+    text-decoration: underline;
+}
+
+.header__login .login {
+    padding: 1rem 1.2rem;
+    margin-right: 0.5rem;
+    background-color: transparent;
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-button);
+    color: var(--color-tertiary);
+    font-size: var(--font-size-text);
+    font-weight: 700;
+}
+
+.header__login .login:hover {
+    background-color: var(--color-destaque);
+}

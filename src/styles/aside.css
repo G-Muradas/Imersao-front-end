@@ -1,26 +1,14 @@
-:root {
-    --color-destaque: #1ED760;
-    --color-bg-destaque: #464646;
-    --color-primary: #000;
-    --color-secondary: #EEE;
-    --color-tertiary: #101010;
-    --font-text: 'Arial', sans-serif;
-    --font-size-title: 1.25rem;
-    --font-size-text: 0.875rem;
-    --radius-content: 0.5rem;
-}
 
-body{
-    background-color: var(--color-primary);
-}
+/* ASIDE */
 
 .sidebar {
+    margin: 1% 0 0 1%;
     position: fixed;
-    top: 1%;
-    left: 1%;
+    left: 0;
+    top: 0;
     bottom: 0;
     padding: 0,75rem;
-    width: 40vw;
+    width: 30vw;
 }
 
 .sidebar__navigation {
@@ -31,14 +19,13 @@ body{
 }
 
 .logo img{
-    width: 70%;
+    width: 5rem;
     margin-top: 1rem;
-    padding: 1.23vh 1.38vw 0 1.23vh;
+    padding: 0.625rem;
 }
 
 .sidebar nav ul {
-    margin: 3.09vh 0;
-    padding: 0 2.21vw;
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,9 +79,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40vw;
-    position: fixed;
-    left: 1%;
+    width: 30vw;
+    margin-top: 2%;
 }
 
 .library__head {
@@ -123,25 +109,24 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align: center;
-    background-color: var(--color-bg-destaque);
+    box-align: center;
+    background-color: var(--color-bg-playlist);
     color: var(--color-secondary);
     border-radius: 1.56rem;
     font-family: var(--font-text);
     font-size: var(--font-size-title);
     font-weight: 600;
-    margin: 2.48vh 2.76vw;
-    padding: 2.48vh 2.76vw;
+    margin: 1rem;
+    padding: 0.8rem;
     height: fit-content;
 }
 
 .playlist .text {
-    padding: 0.61vh 0.69vw
+    padding: 0.5rem;
 }
 
 .playlist .subtitle {
     font-size: var(--font-size-text);
-    margin-bottom: 2.48vh;
     font-weight: 500;
 }
 
@@ -156,15 +141,15 @@ body{
 
 .playlist__button span {
     color: var(--color-primary);
-    padding: 1.24vh 2.76vw; 
-    border-radius: 2rem;
+    padding: 1rem 1.2rem; 
+    border-radius: var(--radius-button);
     background-color: var(--color-secondary);
 }
 
 
 .cookies a {
-    color: var(--color-bg-destaque);
-    margin: 4.95vh 5.53vw;
+    color: var(--color-bg-playlist);
+    margin: 1rem;
     font-weight: 400;
     font-size: var(--font-size-text);
     font-family: var(--font-text);
@@ -176,66 +161,24 @@ body{
     width: fit-content;
 }
 
+
+.fa-globe {
+    padding: 0;
+}
+
 .languages__button div {
     display:flex;
-    align-content: flex-end;
-    margin-left: 2.21vw;
-    padding: 0.99vh 1.1vw 0.99vh 0;
-    border-radius: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: var(--radius-button);
     border: 0.125rem solid var(--color-secondary)
 }
 
-.languages__button div span {
-    align-self: center;
+.languages div:hover {
+    border-color: var(--color-destaque);
 }
-
-
-/* FOOTER */
-
-footer .footer__content {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: fit-content;
-
-}
-
-
-.footer__content {
-    display: flex;
-    background: rgb(255,47,160);
-background: linear-gradient(90deg, rgb(168, 4, 94) 4%, rgb(39, 72, 238) 74%);
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__content__text {
-    display:flex;
-    flex-direction: column;
-    color: var(--color-secondary);
-    font-family: var(--font-text);
-    padding: 1.98vh 2.21vw;
-    margin: 1.23vh 1.38vw;
-    justify-content: center;
-    gap: 0.62vh;
-    
-}
-
-.footer__content__button {
-    padding: 5%;
-
-}
-
-.footer__content__button button {
-    color: var(--color-primary);
-    padding: 1.24vh 2.76vw; 
-    border-radius: 2rem;
-    background-color: var(--color-secondary);
-    width: max-content;
-}
-
-
 
 
 /* HOVER */
@@ -243,8 +186,7 @@ background: linear-gradient(90deg, rgb(168, 4, 94) 4%, rgb(39, 72, 238) 74%);
 .fa-plus:hover,
 .library__head button:hover,
 .languages_button:hover,
-.sidebar ul li a:hover,
-.languages div:hover {
+.sidebar ul li a:hover {
     color: var(--color-destaque);
 }
 
@@ -257,4 +199,3 @@ background: linear-gradient(90deg, rgb(168, 4, 94) 4%, rgb(39, 72, 238) 74%);
 .footer__content__button span:hover {
     text-decoration: underline;
 }
-

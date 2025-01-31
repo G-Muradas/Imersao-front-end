@@ -7,17 +7,16 @@
     <title>Spotify | Imersão</title>
     
     <link rel="stylesheet" href="src/styles/reset.css">
-    <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/header-main.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/aside.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/main.css">
 
     <script src="https://kit.fontawesome.com/38452dc7e7.js" crossorigin="anonymous"></script>
-
-
 </head>
 
 <body>
-    <header></header>
-
     <aside class="sidebar">
         <nav class="sidebar__navigation">
             <div class="logo">
@@ -61,22 +60,55 @@
             <div class="languages">
                 <button class="languages__button">
                     <div>
-                    <span class="fa-solid fa-globe"></span>
-                    <span>Português do Brasil</span>
+                        <span class="fa-solid fa-globe"></span>
+                        <span>Português do Brasil</span>
                     </div>
                 </button>
             </div>
         </div>
     </aside>
 
-    <main>
-         
+    <header>
+        <div class="header-container">
+            <nav class="header__navigation">
+                <div class="navigation__buttons">
+                    <button class="arrow-left">
+                        <img src="src/assets/icons/small-left.png" alt="Seta para esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="src/assets/icons/small-right.png" alt="Seta para direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                    <img src="src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?"/>
+                </div>
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>    
+        <div class="main-container">
+            <div class="container__text">
+                <h1 class="container__title">Olá, seja bem-vindo!</h1>
+                <h2 class="container__subtitle">Navegue por todas as seções</h2>
+            </div>
+            <div class="container__sections">
+
+            </div>
+
+        </div>
     </main>
+
     <footer>
         <div class="footer__content">
             <div class="footer__content__text">
-                <span>TESTAR O PREMIUM DE GRAÇA</span>
-                <span>Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
+                <span class="footer-title">TESTAR O PREMIUM DE GRAÇA</span>
+                <span class="footer-subtitle">Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
             </div>
             <div class="footer__content__button">
                 <button>Inscreva-se agora</button>
