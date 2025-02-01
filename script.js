@@ -9,6 +9,12 @@ if (currentHour >= 5 && currentHour < 12) {
   greetingElement.textContent = "Boa noite";
 }
 
+
+//json-server --watch api-artists/artists.json --port 3000
+// npm install @testing-library/react@latest
+
+//npm install @testing-library/react@latest
+
 // Forma mais simples
 // const greetingMessage =
 //   currentHour >= 5 && currentHour < 12
@@ -31,7 +37,7 @@ const observer = new ResizeObserver(() => {
   console.log({ numColumns });
 });
 
-// observer.observe(container); 
+observer.observe(container); 
 
 // SEARCH
 

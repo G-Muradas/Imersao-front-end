@@ -12,8 +12,8 @@ body{
 .main-container {
     display: flex;
     flex-direction: column;
-    width: max-content;
-    height: max-content;
+    width: 80vw;
+    height: 100%;
     margin: 1% 1% 0 32vw;
     font-family: var(--font-text);
     background-color: var(--color-tertiary);
@@ -40,7 +40,6 @@ body{
 .container__subtitle {
     font-size: var(--font-size-title);
     color: var(--color-secondary);
-
 }
 
 /* SCROLL */
@@ -68,7 +67,7 @@ body{
     grid-gap: 1rem;
     gap: 1rem;
     margin-bottom: 0 auto;
-    width: 74vw;
+    width: 68.5vw;
 
 }
 
@@ -159,8 +158,9 @@ body{
   .grid-container {
     grid-gap: 1.5rem;
     display: grid;  
-    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
-    min-width : var(--min-container-width);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    
+    min-width : 74vw;
   }
   
   .artist-card {
@@ -169,7 +169,7 @@ body{
     -ms-flex: 1;
     flex: 1;
     isolation: isolate;
-    padding: 1rem;
+    margin: 1rem;
     position: relative;
     transition: background-color 0.3s ease;
     width: 100%;
@@ -183,7 +183,7 @@ body{
     padding-bottom: 100%;
     position: relative;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 2rem;
   }
   
   .artist-img {
@@ -198,11 +198,11 @@ body{
   .card-text {
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: var(--color-secondary);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    min-height: 62px;
+    min-height: 3.9rem;
   }
   
   .card-text a {
@@ -214,9 +214,9 @@ body{
   .artist-name {
     box-sizing: border-box;
     margin-block: 0px;
-    font-size: 16px;
+    font-size: var(--font-size-title);
     font-weight: 700;
-    padding-block-end: 8px;
+    padding-block-end: 1rem;
   }
   
   .artist-categorie {
@@ -231,26 +231,26 @@ body{
   
   .play .fa-play {
     position: absolute;
-    right: 10px;
-    top: 120px;
-    padding: 18px;
-    background-color: #1db954;
+    right: 0.625rem;
+    top: 7.5rem;
+    padding: 1.125rem;
+    color: var(--color-destaque);
     border-radius: 100%;
-    font-size: 14px;
+    font-size: var(--font-text);
     opacity: 0;
     transition: all ease 0.4s;
   }
   
-  .artist-card:hover .play .fa-play {
+  .artist-card:hover .play .fa-cirple-play {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateY(-1.125rem);
   }
   
-  .play .fa-play:hover {
-    padding: 20px;
+  .artist-card:hover,
+  .card-text:hover {
     cursor: pointer;
   }
   
   #result-artist {
-    padding: 20px 40px;
+    padding: 1.5rem;
   }
